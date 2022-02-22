@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Бюрократ</string>
+    <string name="my_journals">Мои журналы</string>
+    <string name="settings">Настройки</string>
+    <string name="save">СОХРАНИТЬ</string>
+    <string name="create_new">СОЗДАТЬ НОВЫЙ</string>
+</resources>

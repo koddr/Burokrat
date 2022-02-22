@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Burócrata</string>
+    <string name="my_journals">Mis diarios</string>
+    <string name="settings">Ajustes</string>
+    <string name="save">SALVAR</string>
+    <string name="create_new">CREAR NUEVO</string>
+</resources>
