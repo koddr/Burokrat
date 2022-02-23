@@ -9,11 +9,15 @@ import androidx.compose.runtime.SideEffect
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 private val DarkColorPalette = darkColors(
-    background = BackgroundDark
+    primary = BlueDark,
+    secondary = BlueDark,
+    background = Black
 )
 
 private val LightColorPalette = lightColors(
-    background = BackgroundLight
+    primary = BlueLight,
+    secondary = BlueLight,
+    background = White
 )
 
 @Composable
@@ -24,7 +28,7 @@ fun BurokratTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composab
     SideEffect {
         // Change color for system status bar:
         systemUiController.setSystemBarsColor(
-            color = if (darkTheme) BackgroundDark else BackgroundLight,
+            color = if (darkTheme) Black else White,
             darkIcons = !darkTheme
         )
     }

@@ -1,0 +1,16 @@
+package com.truewebartisans.burokrat.ui.theme
+
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+
+// Header:
+val headerTextStyle = Typography.h1
+val headerTextModifier = Modifier.padding(horizontal = 16.dp, vertical = 24.dp)
+
+// Card:
+val cardElevation = 4.dp
+val cardShape = Shapes.large
+val cardModifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp).fillMaxSize()
+val cardTextModifier = Modifier.padding(20.dp)
