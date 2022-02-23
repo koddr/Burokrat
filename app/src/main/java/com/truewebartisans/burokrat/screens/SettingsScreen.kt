@@ -1,5 +1,7 @@
 package com.truewebartisans.burokrat.screens
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Done
@@ -10,6 +12,7 @@ import com.truewebartisans.burokrat.R
 import com.truewebartisans.burokrat.Routes
 import com.truewebartisans.burokrat.ui.theme.headerTextModifier
 import com.truewebartisans.burokrat.ui.theme.headerTextStyle
+import com.truewebartisans.burokrat.ui.theme.lazyColumnItemBoxModifier
 
 @Composable
 fun SettingsScreen(navController: NavHostController) {
@@ -22,6 +25,7 @@ fun SettingsScreen(navController: NavHostController) {
                     style = headerTextStyle,
                     modifier = headerTextModifier
                 )
+                Box(modifier = lazyColumnItemBoxModifier.background(MaterialTheme.colors.background))
             }
         },
         floatingActionButtonPosition = FabPosition.Center,

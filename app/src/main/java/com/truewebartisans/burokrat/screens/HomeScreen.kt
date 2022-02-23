@@ -1,5 +1,7 @@
 package com.truewebartisans.burokrat.screens
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -23,23 +25,67 @@ fun HomeScreen(navController: NavHostController) {
 
     val sampleList = listOf(
         mapOf(
-            "emoji" to EmojiElement.HEARTH.emoji,
+            "emoji" to EmojiElement.DEFAULT.code,
+            "text" to "Lorem ipsum dollor sit amet Lorem ipsum dollor sit amet Lorem ipsum dollor sit amet"
+        ),
+        mapOf(
+            "emoji" to EmojiElement.HEARTH.code,
             "text" to "Lorem ipsum dollor sit amet"
         ),
         mapOf(
-            "emoji" to EmojiElement.FIRE.emoji,
+            "emoji" to EmojiElement.SHOPPING.code,
             "text" to "Lorem ipsum dollor sit amet"
         ),
         mapOf(
-            "emoji" to EmojiElement.RAINBOW.emoji,
+            "emoji" to EmojiElement.HUNDRED.code,
+            "text" to "Lorem ipsum dollor sit amet"
+        ),
+        mapOf(
+            "emoji" to EmojiElement.FIRE.code,
+            "text" to "Lorem ipsum dollor sit amet Lorem ipsum dollor sit amet Lorem ipsum dollor sit amet Lorem ipsum dollor sit amet"
+        ),
+        mapOf(
+            "emoji" to EmojiElement.COIN.code,
+            "text" to "Lorem ipsum dollor sit amet"
+        ),
+        mapOf(
+            "emoji" to EmojiElement.IDEA.code,
+            "text" to "Lorem ipsum dollor sit amet"
+        ),
+        mapOf(
+            "emoji" to EmojiElement.PHOTO.code,
+            "text" to "Lorem ipsum dollor sit amet"
+        ),
+        mapOf(
+            "emoji" to EmojiElement.PARTY.code,
+            "text" to "Lorem ipsum dollor sit amet Lorem ipsum dollor sit amet"
+        ),
+        mapOf(
+            "emoji" to EmojiElement.PILL.code,
+            "text" to "Lorem ipsum dollor sit amet"
+        ),
+        mapOf(
+            "emoji" to EmojiElement.RAINBOW.code,
+            "text" to "Lorem ipsum dollor sit amet"
+        ),
+        mapOf(
+            "emoji" to EmojiElement.STUDY.code,
+            "text" to "Lorem ipsum dollor sit amet"
+        ),
+        mapOf(
+            "emoji" to EmojiElement.MOVIE.code,
             "text" to "Lorem ipsum dollor sit amet"
         )
     )
 
     Scaffold(
         content = {
-            Surface(color = MaterialTheme.colors.background) {
-                LazyColumn(modifier = Modifier.fillMaxSize()) {
+            Surface(
+                color = MaterialTheme.colors.background
+            ) {
+                LazyColumn(
+                    modifier = Modifier.fillMaxSize()
+                ) {
                     item {
                         Text(
                             stringResource(R.string.my_journals),
@@ -49,12 +95,21 @@ fun HomeScreen(navController: NavHostController) {
                     }
                     if (sampleList.isNotEmpty()) {
                         itemsIndexed(sampleList) { _, item ->
-                            JournalCard(item["emoji"].toString(), item["text"].toString())
+                            JournalCard(
+                                item["emoji"].toString(),
+                                item["text"].toString()
+                            )
                         }
                     } else {
                         item {
-                            JournalCard(EmojiElement.WOMAN_IDK.emoji, "Oops... Journals not found!\nCreate a new one now :)")
+                            JournalCard(
+                                EmojiElement.WOMAN_IDK.code,
+                                stringResource(R.string.oops_not_found_journals)
+                            )
                         }
+                    }
+                    item {
+                        Box(modifier = lazyColumnItemBoxModifier.background(MaterialTheme.colors.background))
                     }
                 }
             }

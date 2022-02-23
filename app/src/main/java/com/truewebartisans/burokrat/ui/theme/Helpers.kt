@@ -1,6 +1,7 @@
 package com.truewebartisans.burokrat.ui.theme
 
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
@@ -8,6 +9,9 @@ import androidx.compose.ui.unit.dp
 // Header:
 val headerTextStyle = Typography.h1
 val headerTextModifier = Modifier.padding(horizontal = 16.dp, vertical = 24.dp)
+
+// Lazy column:
+val lazyColumnItemBoxModifier = Modifier.height(74.dp)
 
 // Card:
 val cardElevation = 4.dp

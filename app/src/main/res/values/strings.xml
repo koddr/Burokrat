@@ -4,4 +4,5 @@
     <string name="settings">Settings</string>
     <string name="save">SAVE</string>
     <string name="create_new">CREATE NEW</string>
+    <string name="oops_not_found_journals">Oops… Journals not found!\nCreate a new one now.</string>
 </resources>
