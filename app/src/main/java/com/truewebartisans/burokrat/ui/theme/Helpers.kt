@@ -13,4 +13,6 @@ val headerTextModifier = Modifier.padding(horizontal = 16.dp, vertical = 24.dp)
 val cardElevation = 4.dp
 val cardShape = Shapes.large
 val cardModifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp).fillMaxSize()
+val cardEmojiModifier = Modifier.padding(start = 20.dp)
+val cardEmojiTextStyle = Typography.h5
 val cardTextModifier = Modifier.padding(20.dp)
