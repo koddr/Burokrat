@@ -25,7 +25,11 @@ fun HomeScreen(navController: NavHostController) {
 
     val sampleList = listOf(
         mapOf(
-            "emoji" to EmojiElement.DEFAULT.code,
+            "emoji" to EmojiElement.DEFAULT_FILE.code,
+            "text" to "Lorem ipsum dollor sit amet Lorem ipsum dollor sit amet Lorem ipsum dollor sit amet"
+        ),
+        mapOf(
+            "emoji" to EmojiElement.DEFAULT_JOURNAL.code,
             "text" to "Lorem ipsum dollor sit amet Lorem ipsum dollor sit amet Lorem ipsum dollor sit amet"
         ),
         mapOf(

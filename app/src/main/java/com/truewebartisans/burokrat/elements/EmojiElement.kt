@@ -1,7 +1,8 @@
 package com.truewebartisans.burokrat.elements
 
 enum class EmojiElement(val code: String) {
-    DEFAULT("\uD83D\uDCDD"),
+    DEFAULT_JOURNAL("\uD83D\uDDC2️"),
+    DEFAULT_FILE("\uD83D\uDCDD"),
     HUNDRED("\uD83D\uDCAF"),
     WOMAN_IDK("\uD83E\uDD37\u200D"),
     RAINBOW("\uD83C\uDF08"),
@@ -13,6 +14,7 @@ enum class EmojiElement(val code: String) {
     STUDY("\uD83C\uDF93"),
     MOVIE("\uD83C\uDFAC"),
     PHOTO("\uD83D\uDCF8"),
+    LINK("\uD83D\uDD17"),
     SHOPPING("\uD83D\uDED2️"),
     HEARTH("\u2764️")
 }
